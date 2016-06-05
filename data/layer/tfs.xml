@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Layer>
+    <Title>
+        layer
+    </Title>
+    <Abstract>
+        
+    </Abstract>
+    <MaxLevel>
+        4
+    </MaxLevel>
+    <FirstLevel>
+        1
+    </FirstLevel>
+    <BoundingBox maxx="-71.030010614844144" maxy="42.379512110861008" minx="-71.109212747701079" miny="42.322405818196252">
+    </BoundingBox>
+</Layer>
