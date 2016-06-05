@@ -1,0 +1,65 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "osgEarthQt", "src\osgEarthQt\osgEarthQt.vcxproj", "{332DC93B-BCAB-469C-91D7-27CFFDE582DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{B58C8D95-1E6D-4B3B-917B-FB30D4487E97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{3B8D78D8-D1C8-4217-B33E-EB5B87EAA3A6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample osgearth_qt", "src\applications\osgearth_qt\application_osgearth_qt.vcxproj", "{3F473448-5083-49AE-A5B2-22F4B73C7FBF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample osgearth_qt_simple", "src\applications\osgearth_qt_simple\application_osgearth_qt_simple.vcxproj", "{C56DCD20-1590-45FD-937E-C7303C880F7D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample osgearth_qt_windows", "src\applications\osgearth_qt_windows\application_osgearth_qt_windows.vcxproj", "{C13AE251-16EB-48EF-A06A-6F273D68E01C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{0FD1570F-5394-4867-ABC1-697ECAE87673}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tool osgearth_package_qt", "src\applications\osgearth_package_qt\application_osgearth_package_qt.vcxproj", "{8323D60C-E15A-4231-8FBB-006A23012F18}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample osgearth_demo", "src\applications\osgearth_demo\application_osgearth_demo.vcxproj", "{6621BC09-6EB4-44FE-90BB-C6D83B401787}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{332DC93B-BCAB-469C-91D7-27CFFDE582DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{332DC93B-BCAB-469C-91D7-27CFFDE582DD}.Debug|Win32.Build.0 = Debug|Win32
+		{332DC93B-BCAB-469C-91D7-27CFFDE582DD}.Release|Win32.ActiveCfg = Release|Win32
+		{332DC93B-BCAB-469C-91D7-27CFFDE582DD}.Release|Win32.Build.0 = Release|Win32
+		{3F473448-5083-49AE-A5B2-22F4B73C7FBF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3F473448-5083-49AE-A5B2-22F4B73C7FBF}.Debug|Win32.Build.0 = Debug|Win32
+		{3F473448-5083-49AE-A5B2-22F4B73C7FBF}.Release|Win32.ActiveCfg = Release|Win32
+		{3F473448-5083-49AE-A5B2-22F4B73C7FBF}.Release|Win32.Build.0 = Release|Win32
+		{C56DCD20-1590-45FD-937E-C7303C880F7D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C56DCD20-1590-45FD-937E-C7303C880F7D}.Debug|Win32.Build.0 = Debug|Win32
+		{C56DCD20-1590-45FD-937E-C7303C880F7D}.Release|Win32.ActiveCfg = Release|Win32
+		{C56DCD20-1590-45FD-937E-C7303C880F7D}.Release|Win32.Build.0 = Release|Win32
+		{C13AE251-16EB-48EF-A06A-6F273D68E01C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C13AE251-16EB-48EF-A06A-6F273D68E01C}.Debug|Win32.Build.0 = Debug|Win32
+		{C13AE251-16EB-48EF-A06A-6F273D68E01C}.Release|Win32.ActiveCfg = Release|Win32
+		{C13AE251-16EB-48EF-A06A-6F273D68E01C}.Release|Win32.Build.0 = Release|Win32
+		{8323D60C-E15A-4231-8FBB-006A23012F18}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8323D60C-E15A-4231-8FBB-006A23012F18}.Debug|Win32.Build.0 = Debug|Win32
+		{8323D60C-E15A-4231-8FBB-006A23012F18}.Release|Win32.ActiveCfg = Release|Win32
+		{8323D60C-E15A-4231-8FBB-006A23012F18}.Release|Win32.Build.0 = Release|Win32
+		{6621BC09-6EB4-44FE-90BB-C6D83B401787}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6621BC09-6EB4-44FE-90BB-C6D83B401787}.Debug|Win32.Build.0 = Debug|Win32
+		{6621BC09-6EB4-44FE-90BB-C6D83B401787}.Release|Win32.ActiveCfg = Release|Win32
+		{6621BC09-6EB4-44FE-90BB-C6D83B401787}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{332DC93B-BCAB-469C-91D7-27CFFDE582DD} = {B58C8D95-1E6D-4B3B-917B-FB30D4487E97}
+		{3F473448-5083-49AE-A5B2-22F4B73C7FBF} = {3B8D78D8-D1C8-4217-B33E-EB5B87EAA3A6}
+		{C56DCD20-1590-45FD-937E-C7303C880F7D} = {3B8D78D8-D1C8-4217-B33E-EB5B87EAA3A6}
+		{C13AE251-16EB-48EF-A06A-6F273D68E01C} = {3B8D78D8-D1C8-4217-B33E-EB5B87EAA3A6}
+		{8323D60C-E15A-4231-8FBB-006A23012F18} = {0FD1570F-5394-4867-ABC1-697ECAE87673}
+		{6621BC09-6EB4-44FE-90BB-C6D83B401787} = {3B8D78D8-D1C8-4217-B33E-EB5B87EAA3A6}
+	EndGlobalSection
+EndGlobal

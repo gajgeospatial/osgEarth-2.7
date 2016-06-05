@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="moc_ui_ExportDialog.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_PackageQtMainWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_ExportDialog.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_WaitDialog.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qrc_images.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\applications\osgearth_package_qt\ExportDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\applications\osgearth_package_qt\ExportProgress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\applications\osgearth_package_qt\SceneController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\applications\osgearth_package_qt\TMSExporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\applications\osgearth_package_qt\WaitDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\applications\osgearth_package_qt\package_qt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\applications\osgearth_package_qt\ExportProgress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\applications\osgearth_package_qt\SceneController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\applications\osgearth_package_qt\TMSExporter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_ExportDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\src\applications\osgearth_package_qt\images.qrc" />
+    <CustomBuild Include="..\..\..\..\src\applications\osgearth_package_qt\ExportDialog.ui" />
+    <CustomBuild Include="..\..\..\CMakeFiles\958583169e2a7b174aa43dd31a6ec33d\moc_ui_ExportDialog.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\CMakeFiles\958583169e2a7b174aa43dd31a6ec33d\moc_PackageQtMainWindow.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\CMakeFiles\958583169e2a7b174aa43dd31a6ec33d\moc_ExportDialog.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\CMakeFiles\958583169e2a7b174aa43dd31a6ec33d\moc_WaitDialog.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\applications\osgearth_package_qt\PackageQtMainWindow" />
+    <None Include="..\..\..\..\src\applications\osgearth_package_qt\ExportDialog" />
+    <None Include="..\..\..\..\src\applications\osgearth_package_qt\WaitDialog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CF0D3687-B702-4B23-8073-F78C0F4942B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9577DF2B-752F-4E32-A763-02007023CFB3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AA766389-AEAC-4B32-847C-5DDDB735706A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="qrc_images.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_ui_LOSCreationDialog.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_AnnotationDialogs.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_AnnotationListWidget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_AnnotationToolbar.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_CollapsiblePairWidget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_DataManager.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_LayerManagerWidget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_LOSControlWidget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_LOSCreationDialog.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_MapCatalogWidget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_TerrainProfileGraph.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_TerrainProfileWidget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_ViewerWidget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\AnnotationDialogs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\AnnotationListWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\AnnotationToolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\CollapsiblePairWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\DataManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\LayerManagerWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\LOSControlWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\LOSCreationDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\MapCatalogWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\TerrainProfileGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\TerrainProfileWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\ViewWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgEarthQt\ViewerWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui_LOSCreationDialog.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\osgEarthQt\ui\LOSCreationDialog.ui">
+      <Filter>Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\osgEarthQt\images.qrc">
+      <Filter>Headers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_ui_LOSCreationDialog.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_AnnotationDialogs.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_AnnotationListWidget.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_AnnotationToolbar.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_CollapsiblePairWidget.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_DataManager.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_LayerManagerWidget.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_LOSControlWidget.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_LOSCreationDialog.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_MapCatalogWidget.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_TerrainProfileGraph.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_TerrainProfileWidget.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\269d43cdac6e1a70b39f13dd6f962973\moc_ViewerWidget.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\osgEarthQt\Actions">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\AnnotationDialogs">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\AnnotationListWidget">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\AnnotationToolbar">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\CollapsiblePairWidget">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\Common">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\DataManager">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\GuiActions">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\LayerManagerWidget">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\LOSControlWidget">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\LOSCreationDialog">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\MapCatalogWidget">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\TerrainProfileGraph">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\TerrainProfileWidget">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\ViewWidget">
+      <Filter>Headers</Filter>
+    </None>
+    <None Include="..\..\..\src\osgEarthQt\ViewerWidget">
+      <Filter>Headers</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CF0D3687-B702-4B23-8073-F78C0F4942B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AA766389-AEAC-4B32-847C-5DDDB735706A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{CE1089B4-BD87-4E91-B9C6-0DB482FEC1A3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

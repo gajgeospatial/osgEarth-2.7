@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{AE8077FB-D820-4A28-A8FF-EC93EC26BCA2}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\osgearth-2.7\src;D:\Development\op3d_active\OpenSceneGraph-3.2.1\include;D:\Development\op3d_active\OpenSceneGraph-3.2.1\msvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\osgearth-2.7\src;D:\Development\op3d_active\OpenSceneGraph-3.2.1\include;D:\Development\op3d_active\OpenSceneGraph-3.2.1\msvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\osgearth-2.7\src;D:\Development\op3d_active\OpenSceneGraph-3.2.1\include;D:\Development\op3d_active\OpenSceneGraph-3.2.1\msvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\osgearth-2.7\src;D:\Development\op3d_active\OpenSceneGraph-3.2.1\include;D:\Development\op3d_active\OpenSceneGraph-3.2.1\msvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\osgEarthDrivers\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Development/op3d_active/osgearth-2.7/src/osgEarthDrivers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/osgearth-2.7 -BD:/Development/op3d_active/osgearth-2.7/msvc --check-stamp-file D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Development/op3d_active/osgearth-2.7/src/osgEarthDrivers/CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\src\osgEarthDrivers\CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\src\osgEarthDrivers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Development/op3d_active/osgearth-2.7/src/osgEarthDrivers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/osgearth-2.7 -BD:/Development/op3d_active/osgearth-2.7/msvc --check-stamp-file D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Development/op3d_active/osgearth-2.7/src/osgEarthDrivers/CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\src\osgEarthDrivers\CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\src\osgEarthDrivers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/Development/op3d_active/osgearth-2.7/src/osgEarthDrivers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/osgearth-2.7 -BD:/Development/op3d_active/osgearth-2.7/msvc --check-stamp-file D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Development/op3d_active/osgearth-2.7/src/osgEarthDrivers/CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\src\osgEarthDrivers\CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\src\osgEarthDrivers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/Development/op3d_active/osgearth-2.7/src/osgEarthDrivers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/osgearth-2.7 -BD:/Development/op3d_active/osgearth-2.7/msvc --check-stamp-file D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Development/op3d_active/osgearth-2.7/src/osgEarthDrivers/CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\src\osgEarthDrivers\CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\src\osgEarthDrivers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\5adc0a69443490987dd5f13114f480dd\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/5adc0a69443490987dd5f13114f480dd/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/5adc0a69443490987dd5f13114f480dd/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/5adc0a69443490987dd5f13114f480dd/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/5adc0a69443490987dd5f13114f480dd/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\src\osgEarthDrivers\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/earth/osgdb_earth.vcxproj">
+      <Project>6F19B6C3-884D-4A91-BF96-D8A626B29867</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/kml/osgdb_kml.vcxproj">
+      <Project>5E2CE19A-956F-4187-AB38-F5EE2A340E4F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/agglite/osgdb_osgearth_agglite.vcxproj">
+      <Project>26B914A3-03F3-48B9-83F4-2A9168005FD5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/arcgis/osgdb_osgearth_arcgis.vcxproj">
+      <Project>0DE72E4D-2C2E-4F68-A0F2-7B008060A2B9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/arcgis_map_cache/osgdb_osgearth_arcgis_map_cache.vcxproj">
+      <Project>61FC68F1-C84B-41F6-813F-FCE7423A070A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/bing/osgdb_osgearth_bing.vcxproj">
+      <Project>B0FE9B18-A079-4EFD-9DFD-F5EC99F7774A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/cache_filesystem/osgdb_osgearth_cache_filesystem.vcxproj">
+      <Project>F36E7330-9BB1-4021-A116-E7AD5BEA23E4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/colorramp/osgdb_osgearth_colorramp.vcxproj">
+      <Project>E9BFC866-6228-47DB-AB89-45B5D4738AFD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/debug/osgdb_osgearth_debug.vcxproj">
+      <Project>A6FE2ADC-26D8-42A4-B904-5140480FC6A9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/engine_byo/osgdb_osgearth_engine_byo.vcxproj">
+      <Project>2BA993BD-152F-4247-B688-E18E038BED7C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/engine_mp/osgdb_osgearth_engine_mp.vcxproj">
+      <Project>C1F7A638-6114-451A-B46E-C8EB9AAF9E5A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/feature_elevation/osgdb_osgearth_feature_elevation.vcxproj">
+      <Project>EC3B4D9F-FE30-429C-B5D7-648A109AD66C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/feature_ogr/osgdb_osgearth_feature_ogr.vcxproj">
+      <Project>D6E76E25-B972-452A-BB1F-BA2CE6C65846</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/feature_raster/osgdb_osgearth_feature_raster.vcxproj">
+      <Project>09681324-3102-4CD5-B8B0-680197D22801</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/feature_tfs/osgdb_osgearth_feature_tfs.vcxproj">
+      <Project>F46F2C60-9041-499B-A24D-2EEBA46CECCE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/feature_wfs/osgdb_osgearth_feature_wfs.vcxproj">
+      <Project>61780A97-53EF-4B11-BF97-5031B77CF287</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/gdal/osgdb_osgearth_gdal.vcxproj">
+      <Project>71732232-29E1-42CE-BA65-84B7A15F38BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/label_annotation/osgdb_osgearth_label_annotation.vcxproj">
+      <Project>899A0977-0289-415C-9CCE-650B9115311D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/mask_feature/osgdb_osgearth_mask_feature.vcxproj">
+      <Project>62DCE4CE-373F-490B-A2B0-B2F9860845E3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/mbtiles/osgdb_osgearth_mbtiles.vcxproj">
+      <Project>3B5F89D7-3F2B-469F-86BB-C0681700E9B2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/model_feature_geom/osgdb_osgearth_model_feature_geom.vcxproj">
+      <Project>CE7B109E-AA7B-4C39-8FB3-F103F3CCAEAD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/model_feature_stencil/osgdb_osgearth_model_feature_stencil.vcxproj">
+      <Project>AF5937C2-4811-434A-8778-BE80DC3DB06C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/model_simple/osgdb_osgearth_model_simple.vcxproj">
+      <Project>DBB72A23-71F2-4AD0-AB01-9EDADE40BB75</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/ocean_simple/osgdb_osgearth_ocean_simple.vcxproj">
+      <Project>70097CE4-7D2C-4C8A-A68C-658EDA9EF069</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/osg/osgdb_osgearth_osg.vcxproj">
+      <Project>C568E754-B095-4F77-A1EA-DDC58312C8F0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/quadkey/osgdb_osgearth_quadkey.vcxproj">
+      <Project>F32A9266-AC4C-4B3C-B352-E820E5C3137F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/refresh/osgdb_osgearth_refresh.vcxproj">
+      <Project>B69CA2EB-954A-4789-B775-7426F8A428EF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/script_engine_duktape/osgdb_osgearth_scriptengine_javascript.vcxproj">
+      <Project>DA374479-2C85-493A-887C-0F33A2DEE7F4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/sky_gl/osgdb_osgearth_sky_gl.vcxproj">
+      <Project>FE2FAC50-4232-4539-B5B3-A113A2CF1BFE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/sky_simple/osgdb_osgearth_sky_simple.vcxproj">
+      <Project>919A7E72-D107-433B-B361-51F20505C142</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/splat_mask/osgdb_osgearth_splat_mask.vcxproj">
+      <Project>5CDBDFB1-F01E-40B8-90FD-5748788A6A35</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/template_matclass/osgdb_osgearth_template_matclass.vcxproj">
+      <Project>44F4911F-24CC-4599-9D40-E8A2EA033C66</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/tilecache/osgdb_osgearth_tilecache.vcxproj">
+      <Project>A75E4AD5-F2D6-4AA9-B425-FFF50B8B412C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/tileindex/osgdb_osgearth_tileindex.vcxproj">
+      <Project>790E5FAF-BED5-4BE4-BF48-3AF1206F53EE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/tileservice/osgdb_osgearth_tileservice.vcxproj">
+      <Project>6938FD40-D670-4792-9FAB-F00E5D5B865E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/tms/osgdb_osgearth_tms.vcxproj">
+      <Project>26EFE06C-4EAD-41DF-BA5F-EE6D75BC6A31</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/vdatum_egm2008/osgdb_osgearth_vdatum_egm2008.vcxproj">
+      <Project>762BAE6D-ACFE-47B4-B795-D7B4751C8579</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/vdatum_egm84/osgdb_osgearth_vdatum_egm84.vcxproj">
+      <Project>7C1AFFF9-CD16-4C91-B55B-630BA7CCE9C8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/vdatum_egm96/osgdb_osgearth_vdatum_egm96.vcxproj">
+      <Project>34F0DA16-22D3-4CE1-B8C0-1168441BE781</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/vpb/osgdb_osgearth_vpb.vcxproj">
+      <Project>6AEA5E4D-64FA-44BD-A177-E9E441EF48D7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/wcs/osgdb_osgearth_wcs.vcxproj">
+      <Project>0CA7A0B7-B2F5-4F80-B7CE-7C9D705E03F7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/wms/osgdb_osgearth_wms.vcxproj">
+      <Project>D9F1300D-8D73-4FFF-B3EA-C87B733AABE1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/xyz/osgdb_osgearth_xyz.vcxproj">
+      <Project>14C2D9FA-221F-4891-AECA-0CA4459229DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/yahoo/osgdb_osgearth_yahoo.vcxproj">
+      <Project>CF156E50-8EFC-40CE-9D40-4A50318293DF</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

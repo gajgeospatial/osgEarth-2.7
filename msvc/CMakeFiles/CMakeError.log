@@ -1,0 +1,257 @@
+Determining if files pthread.h exist failed with the following output:
+Change Dir: D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec1530833306.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/22/2015 1:22:50 PM.
+Project "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1530833306.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec1530833306.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec1530833306.dir\Debug\cmTryCom.5D0AA020.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec1530833306.dir\Debug\cmTryCom.5D0AA020.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1530833306.dir\Debug\\" /Fd"cmTryCompileExec1530833306.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue CheckIncludeFiles.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1530833306.dir\Debug\\" /Fd"cmTryCompileExec1530833306.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue CheckIncludeFiles.c
+  
+  CheckIncludeFiles.c
+CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1530833306.vcxproj]
+Done Building Project "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1530833306.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1530833306.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1530833306.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.26
+
+Source:
+/* */
+#include <pthread.h>
+
+
+int main(){return 0;}
+
+Determining if the Q_WS_X11 exist failed with the following output:
+Change Dir: D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3895964333.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/22/2015 1:48:40 PM.
+Project "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3895964333.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3895964333.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3895964333.dir\Debug\cmTryCom.E166F758.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3895964333.dir\Debug\cmTryCom.E166F758.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3895964333.dir\Debug\\" /Fd"cmTryCompileExec3895964333.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3895964333.dir\Debug\\" /Fd"cmTryCompileExec3895964333.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3895964333.vcxproj]
+Done Building Project "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3895964333.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3895964333.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3895964333.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.27
+
+File D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_X11
+  return ((int*)(&Q_WS_X11))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec2394846834.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/22/2015 1:48:41 PM.
+Project "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2394846834.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec2394846834.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec2394846834.dir\Debug\cmTryCom.3074E140.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec2394846834.dir\Debug\cmTryCom.3074E140.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2394846834.dir\Debug\\" /Fd"cmTryCompileExec2394846834.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2394846834.dir\Debug\\" /Fd"cmTryCompileExec2394846834.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2394846834.vcxproj]
+Done Building Project "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2394846834.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2394846834.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2394846834.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.26
+
+File D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3221637131.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/22/2015 1:48:41 PM.
+Project "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3221637131.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3221637131.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3221637131.dir\Debug\cmTryCom.ED6C415A.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3221637131.dir\Debug\cmTryCom.ED6C415A.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3221637131.dir\Debug\\" /Fd"cmTryCompileExec3221637131.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3221637131.dir\Debug\\" /Fd"cmTryCompileExec3221637131.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3221637131.vcxproj]
+Done Building Project "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3221637131.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3221637131.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3221637131.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.26
+
+File D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec1630052138.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/22/2015 1:48:41 PM.
+Project "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1630052138.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec1630052138.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec1630052138.dir\Debug\cmTryCom.E65EE8A4.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec1630052138.dir\Debug\cmTryCom.E65EE8A4.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1630052138.dir\Debug\\" /Fd"cmTryCompileExec1630052138.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1630052138.dir\Debug\\" /Fd"cmTryCompileExec1630052138.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1630052138.vcxproj]
+Done Building Project "D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1630052138.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1630052138.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1630052138.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.26
+
+File D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

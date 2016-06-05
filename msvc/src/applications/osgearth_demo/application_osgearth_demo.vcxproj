@@ -1,0 +1,1016 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Debug|Win32">
+      <Configuration>vs2010_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Debug|x64">
+      <Configuration>vs2010_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Release|Win32">
+      <Configuration>vs2010_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Release|x64">
+      <Configuration>vs2010_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Debug|Win32">
+      <Configuration>vs2012_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Debug|x64">
+      <Configuration>vs2012_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Release|Win32">
+      <Configuration>vs2012_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Release|x64">
+      <Configuration>vs2012_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Debug|Win32">
+      <Configuration>vs2015_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Debug|x64">
+      <Configuration>vs2015_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Release|Win32">
+      <Configuration>vs2015_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Release|x64">
+      <Configuration>vs2015_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{6621BC09-6EB4-44FE-90BB-C6D83B401787}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>Sample osgearth_demo</ProjectName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">osgearth_demod</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">osgearth_demod</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">osgearth_demod</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">osgearth_demod</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">osgearth_demod</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">osgearth_demod</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">osgearth_demod</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">osgearth_demod</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">osgearth_demo</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">osgearth_demo</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">osgearth_demo</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">osgearth_demo</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">osgearth_demo</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">osgearth_demo</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">osgearth_demo</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">osgearth_demo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarthd.lib;osgEarthFeaturesd.lib;osgEarthUtild.lib;osgEarthSymbologyd.lib;osgEarthAnnotationd.lib;osgEarthQtd.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;osgEarthUtild.lib;osgEarthAnnotationd.lib;osgEarthFeaturesd.lib;osgEarthSymbologyd.lib;osgEarthd.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadowd.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulatord.lib;osgd.lib;osgWidgetd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgQtd.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demod.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarthd.lib;osgEarthFeaturesd.lib;osgEarthUtild.lib;osgEarthSymbologyd.lib;osgEarthAnnotationd.lib;osgEarthQtd.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;osgEarthUtild.lib;osgEarthAnnotationd.lib;osgEarthFeaturesd.lib;osgEarthSymbologyd.lib;osgEarthd.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadowd.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulatord.lib;osgd.lib;osgWidgetd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgQtd.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demod.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarthd.lib;osgEarthFeaturesd.lib;osgEarthUtild.lib;osgEarthSymbologyd.lib;osgEarthAnnotationd.lib;osgEarthQtd.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;osgEarthUtild.lib;osgEarthAnnotationd.lib;osgEarthFeaturesd.lib;osgEarthSymbologyd.lib;osgEarthd.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadowd.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulatord.lib;osgd.lib;osgWidgetd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgQtd.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demod.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarthd.lib;osgEarthFeaturesd.lib;osgEarthUtild.lib;osgEarthSymbologyd.lib;osgEarthAnnotationd.lib;osgEarthQtd.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;osgEarthUtild.lib;osgEarthAnnotationd.lib;osgEarthFeaturesd.lib;osgEarthSymbologyd.lib;osgEarthd.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadowd.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulatord.lib;osgd.lib;osgWidgetd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgQtd.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demod.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarthd.lib;osgEarthFeaturesd.lib;osgEarthUtild.lib;osgEarthSymbologyd.lib;osgEarthAnnotationd.lib;osgEarthQtd.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;osgEarthUtild.lib;osgEarthAnnotationd.lib;osgEarthFeaturesd.lib;osgEarthSymbologyd.lib;osgEarthd.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadowd.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulatord.lib;osgd.lib;osgWidgetd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgQtd.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demod.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarthd.lib;osgEarthFeaturesd.lib;osgEarthUtild.lib;osgEarthSymbologyd.lib;osgEarthAnnotationd.lib;osgEarthQtd.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;osgEarthUtild.lib;osgEarthAnnotationd.lib;osgEarthFeaturesd.lib;osgEarthSymbologyd.lib;osgEarthd.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadowd.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulatord.lib;osgd.lib;osgWidgetd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgQtd.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demod.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarthd.lib;osgEarthFeaturesd.lib;osgEarthUtild.lib;osgEarthSymbologyd.lib;osgEarthAnnotationd.lib;osgEarthQtd.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;osgEarthUtild.lib;osgEarthAnnotationd.lib;osgEarthFeaturesd.lib;osgEarthSymbologyd.lib;osgEarthd.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadowd.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulatord.lib;osgd.lib;osgWidgetd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgQtd.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demod.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarthd.lib;osgEarthFeaturesd.lib;osgEarthUtild.lib;osgEarthSymbologyd.lib;osgEarthAnnotationd.lib;osgEarthQtd.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;osgEarthUtild.lib;osgEarthAnnotationd.lib;osgEarthFeaturesd.lib;osgEarthSymbologyd.lib;osgEarthd.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadowd.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulatord.lib;osgd.lib;osgWidgetd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgQtd.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;OpenThreadsd.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demod.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarth.lib;osgEarthFeatures.lib;osgEarthUtil.lib;osgEarthSymbology.lib;osgEarthAnnotation.lib;osgEarthQt.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;osgEarthUtil.lib;osgEarthAnnotation.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarth.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadow.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulator.lib;osg.lib;osgWidget.lib;osgUtil.lib;osgSim.lib;osgTerrain.lib;osgDB.lib;osgFX.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgQt.lib;OpenThreads.lib;glu32.lib;opengl32.lib;OpenThreads.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demo.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarth.lib;osgEarthFeatures.lib;osgEarthUtil.lib;osgEarthSymbology.lib;osgEarthAnnotation.lib;osgEarthQt.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;osgEarthUtil.lib;osgEarthAnnotation.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarth.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadow.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulator.lib;osg.lib;osgWidget.lib;osgUtil.lib;osgSim.lib;osgTerrain.lib;osgDB.lib;osgFX.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgQt.lib;OpenThreads.lib;glu32.lib;opengl32.lib;OpenThreads.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demo.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarth.lib;osgEarthFeatures.lib;osgEarthUtil.lib;osgEarthSymbology.lib;osgEarthAnnotation.lib;osgEarthQt.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;osgEarthUtil.lib;osgEarthAnnotation.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarth.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadow.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulator.lib;osg.lib;osgWidget.lib;osgUtil.lib;osgSim.lib;osgTerrain.lib;osgDB.lib;osgFX.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgQt.lib;OpenThreads.lib;glu32.lib;opengl32.lib;OpenThreads.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demo.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarth.lib;osgEarthFeatures.lib;osgEarthUtil.lib;osgEarthSymbology.lib;osgEarthAnnotation.lib;osgEarthQt.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;osgEarthUtil.lib;osgEarthAnnotation.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarth.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadow.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulator.lib;osg.lib;osgWidget.lib;osgUtil.lib;osgSim.lib;osgTerrain.lib;osgDB.lib;osgFX.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgQt.lib;OpenThreads.lib;glu32.lib;opengl32.lib;OpenThreads.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demo.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarth.lib;osgEarthFeatures.lib;osgEarthUtil.lib;osgEarthSymbology.lib;osgEarthAnnotation.lib;osgEarthQt.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;osgEarthUtil.lib;osgEarthAnnotation.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarth.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadow.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulator.lib;osg.lib;osgWidget.lib;osgUtil.lib;osgSim.lib;osgTerrain.lib;osgDB.lib;osgFX.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgQt.lib;OpenThreads.lib;glu32.lib;opengl32.lib;OpenThreads.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demo.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarth.lib;osgEarthFeatures.lib;osgEarthUtil.lib;osgEarthSymbology.lib;osgEarthAnnotation.lib;osgEarthQt.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;osgEarthUtil.lib;osgEarthAnnotation.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarth.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadow.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulator.lib;osg.lib;osgWidget.lib;osgUtil.lib;osgSim.lib;osgTerrain.lib;osgDB.lib;osgFX.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgQt.lib;OpenThreads.lib;glu32.lib;opengl32.lib;OpenThreads.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demo.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarth.lib;osgEarthFeatures.lib;osgEarthUtil.lib;osgEarthSymbology.lib;osgEarthAnnotation.lib;osgEarthQt.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;osgEarthUtil.lib;osgEarthAnnotation.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarth.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadow.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulator.lib;osg.lib;osgWidget.lib;osgUtil.lib;osgSim.lib;osgTerrain.lib;osgDB.lib;osgFX.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgQt.lib;OpenThreads.lib;glu32.lib;opengl32.lib;OpenThreads.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demo.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_GUI_LIB;QT_CORE_LIB;OSGEARTH_HAVE_MINIZIP;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\$(QT4_DIR)\include;..\..\..\..\..\$(QT4_DIR)\include\QtGui;..\..\..\..\..\$(QT4_DIR)\include\QtCore;..\..\..\..\src;..\..\..\..\..\$(OSG_DIR)\include;..\..\..\..\..\$(OSG_DIR)\msvc\include;..\..\..\..\..\$(QT4_DIR)\include\QtDesigner;..\..\..\..\..\$(QT4_DIR)\include\QtDeclarative;..\..\..\..\..\$(QT4_DIR)\include\QtScriptTools;..\..\..\..\..\$(QT4_DIR)\include\QtDBus;..\..\..\..\..\$(QT4_DIR)\include\QtXml;..\..\..\..\..\$(QT4_DIR)\include\QtSql;..\..\..\..\..\$(QT4_DIR)\include\QtOpenGL;..\..\..\..\..\$(QT4_DIR)\include\QtMultimedia;..\..\..\..\..\$(QT4_DIR)\include\QtNetwork;..\..\..\..\..\$(QT4_DIR)\include\phonon;..\..\..\..\..\$(QT4_DIR)\include\QtXmlPatterns;..\..\..\..\..\$(QT4_DIR)\include\QtWebKit;..\..\..\..\..\$(QT4_DIR)\include\QtHelp;..\..\..\..\..\$(QT4_DIR)\include\QtUiTools;..\..\..\..\..\$(QT4_DIR)\include\QtTest;..\..\..\..\..\$(QT4_DIR)\include\QtScript;..\..\..\..\..\$(QT4_DIR)\include\QtSvg;..\..\..\..\..\$(QT4_DIR)\include\Qt3Support;..\..\..\..\src\applications\osgearth_demo\QT_MKSPECS_DIR-NOTFOUND\default;..\..\..\..\..\$(QT4_DIR)\include\QtGuiD:\Development\op3d_active\$(QT4_DIR)\include\QtOpenGL;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;osgEarth.lib;osgEarthFeatures.lib;osgEarthUtil.lib;osgEarthSymbology.lib;osgEarthAnnotation.lib;osgEarthQt.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;osgEarthUtil.lib;osgEarthAnnotation.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarth.lib;ws2_32.lib;winmm.lib;wldap32.lib;osgShadow.lib;libcurl_imp.lib;zlib.lib;tinyxmlSTL.lib;geos.lib;gdal_i.lib;osgManipulator.lib;osg.lib;osgWidget.lib;osgUtil.lib;osgSim.lib;osgTerrain.lib;osgDB.lib;osgFX.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgQt.lib;OpenThreads.lib;glu32.lib;opengl32.lib;OpenThreads.lib;glu32.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(QT4_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\lib;..\..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(TINYXML_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(CURL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\lib\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgearth_demo.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\applications\osgearth_demo\osgearth_demo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ZERO_CHECK.vcxproj">
+      <Project>8B5082FA-1971-4357-8D06-1636EB944F37</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\osgEarth\osgEarth.vcxproj">
+      <Project>2BFFEFC3-6356-44CA-A035-FDB3B943B139</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\osgEarthAnnotation\osgEarthAnnotation.vcxproj">
+      <Project>F9842558-95AA-4F3E-9C47-C46114BBD35D</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\osgEarthFeatures\osgEarthFeatures.vcxproj">
+      <Project>6ABA1F74-F8A1-46D0-A1DA-F9B96F26F544</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\osgEarthSymbology\osgEarthSymbology.vcxproj">
+      <Project>317835DC-05D5-4406-B128-071E22CD8E3F</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\osgEarthUtil\osgEarthUtil.vcxproj">
+      <Project>99D0FF43-4DD1-457F-92D0-6FB8EBFE34D1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

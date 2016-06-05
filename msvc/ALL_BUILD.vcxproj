@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{AE8077FB-D820-4A28-A8FF-EC93EC26BCA2}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\osgearth-2.7\src;D:\Development\op3d_active\OpenSceneGraph-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\osgearth-2.7\src;D:\Development\op3d_active\OpenSceneGraph-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\osgearth-2.7\src;D:\Development\op3d_active\OpenSceneGraph-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\osgearth-2.7\src;D:\Development\op3d_active\OpenSceneGraph-3.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Development/op3d_active/osgearth-2.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/osgearth-2.7 -BD:/Development/op3d_active/osgearth-2.7/msvc --check-stamp-file D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Development/op3d_active/osgearth-2.7/CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeSystem.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGDAL.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindGEOS.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindSqlite3.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindZLIB.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindLevelDB.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindSilverLining.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindTriton.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindProtobuf.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindV8.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindJavaScriptCore.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindQt4.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\MacroAddFileDependencies.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindTinyXML.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindMiniZip.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindOSG.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\OsgEarthMacroUtils.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\cmake_uninstall.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\Development\op3d_active\osgearth-2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Development/op3d_active/osgearth-2.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/osgearth-2.7 -BD:/Development/op3d_active/osgearth-2.7/msvc --check-stamp-file D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Development/op3d_active/osgearth-2.7/CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeSystem.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGDAL.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindGEOS.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindSqlite3.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindZLIB.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindLevelDB.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindSilverLining.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindTriton.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindProtobuf.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindV8.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindJavaScriptCore.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindQt4.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\MacroAddFileDependencies.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindTinyXML.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindMiniZip.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindOSG.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\OsgEarthMacroUtils.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\cmake_uninstall.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\Development\op3d_active\osgearth-2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/Development/op3d_active/osgearth-2.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/osgearth-2.7 -BD:/Development/op3d_active/osgearth-2.7/msvc --check-stamp-file D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Development/op3d_active/osgearth-2.7/CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeSystem.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGDAL.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindGEOS.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindSqlite3.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindZLIB.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindLevelDB.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindSilverLining.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindTriton.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindProtobuf.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindV8.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindJavaScriptCore.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindQt4.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\MacroAddFileDependencies.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindTinyXML.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindMiniZip.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindOSG.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\OsgEarthMacroUtils.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\cmake_uninstall.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\Development\op3d_active\osgearth-2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/Development/op3d_active/osgearth-2.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/Development/op3d_active/osgearth-2.7 -BD:/Development/op3d_active/osgearth-2.7/msvc --check-stamp-file D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Development/op3d_active/osgearth-2.7/CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\CMakeLists.txt;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeSystem.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCURL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindGDAL.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindGEOS.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindSqlite3.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindZLIB.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindLevelDB.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindSilverLining.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindTriton.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindProtobuf.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindV8.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindJavaScriptCore.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindQt4.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\MacroAddFileDependencies.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindTinyXML.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindMiniZip.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\FindOSG.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\OsgEarthMacroUtils.cmake;D:\Development\op3d_active\osgearth-2.7\CMakeModules\cmake_uninstall.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\Development\op3d_active\osgearth-2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\3c580a0a2cebd42bbc89a0c2103fbdf2\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/3c580a0a2cebd42bbc89a0c2103fbdf2/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/3c580a0a2cebd42bbc89a0c2103fbdf2/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/3c580a0a2cebd42bbc89a0c2103fbdf2/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Development/op3d_active/osgearth-2.7/msvc/CMakeFiles/3c580a0a2cebd42bbc89a0c2103fbdf2/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Development\op3d_active\osgearth-2.7\msvc\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_annotation/application_osgearth_annotation.vcxproj">
+      <Project>C55EB816-6176-4D4A-ABB8-4ED86CAD6EDC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_atlas/application_osgearth_atlas.vcxproj">
+      <Project>F7B12634-03E5-4B9D-BDC1-C7530E14AA82</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_backfill/application_osgearth_backfill.vcxproj">
+      <Project>D22C1FE4-65CC-4E39-82A0-15AE03B68026</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_boundarygen/application_osgearth_boundarygen.vcxproj">
+      <Project>ED2E5759-52B8-4408-84B1-2F71198FBF2A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_seed/application_osgearth_cache.vcxproj">
+      <Project>BAADE0D4-54D7-406D-ABE8-AB88412BB62E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_cache_test/application_osgearth_cache_test.vcxproj">
+      <Project>5D13E8E2-0A06-4524-ACC1-4C8C2D754CDA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_city/application_osgearth_city.vcxproj">
+      <Project>91E300DB-715D-47A1-A762-54131390C4EE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_clamp/application_osgearth_clamp.vcxproj">
+      <Project>51BF823D-12E3-4B2B-963C-49146A3852F4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_clipplane/application_osgearth_clipplane.vcxproj">
+      <Project>1B6D5824-AD34-428F-AA1D-148061F83819</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_colorfilter/application_osgearth_colorfilter.vcxproj">
+      <Project>42E979E5-E3AE-43BC-A13A-E6208D67F23A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_controls/application_osgearth_controls.vcxproj">
+      <Project>861E7160-E3D1-42E0-AD50-A21BB36C9801</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_conv/application_osgearth_conv.vcxproj">
+      <Project>ED795CA7-E30A-4095-9752-30AE67FBF04B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_createtile/application_osgearth_createtile.vcxproj">
+      <Project>3CBDA3C1-95DA-418A-85B0-D313B4316CE4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_elevation/application_osgearth_elevation.vcxproj">
+      <Project>508E5B6A-92F5-4033-A2AE-86BACA70F4ED</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_featurefilter/application_osgearth_featurefilter.vcxproj">
+      <Project>4505DC5E-2E0D-436C-A1B3-207EE08CC4D3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_featureinfo/application_osgearth_featureinfo.vcxproj">
+      <Project>7D1AEE2E-73F2-49B1-9CAA-540E4187DD8E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_featurequery/application_osgearth_featurequery.vcxproj">
+      <Project>EAD77E20-06C4-4F86-B096-1A1E7970A75C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_features/application_osgearth_features.vcxproj">
+      <Project>D378F4F5-4DA6-49C4-A241-CDBB7C117940</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_fog/application_osgearth_fog.vcxproj">
+      <Project>67C5F267-B186-4A63-8716-E75C69B0DB58</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_graticule/application_osgearth_graticule.vcxproj">
+      <Project>74284E18-B301-41CD-8C05-0FB7718A3000</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_imageoverlay/application_osgearth_imageoverlay.vcxproj">
+      <Project>947FE659-5C4C-4D1C-BBA5-3BF3B49E66F2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_los/application_osgearth_los.vcxproj">
+      <Project>9B18AB41-F706-4DC1-9AB2-0A5E1A418FCB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_manip/application_osgearth_manip.vcxproj">
+      <Project>279164FF-F944-410B-8125-1C1609F69EF4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_map/application_osgearth_map.vcxproj">
+      <Project>136D1E70-4A35-4EA6-AC81-F014D1B687C7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_measure/application_osgearth_measure.vcxproj">
+      <Project>833EADA3-ED98-46A7-BA4F-6961FE0E8674</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_minimap/application_osgearth_minimap.vcxproj">
+      <Project>F574AB8E-7708-4178-B224-0EF5BF910A74</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_mrt/application_osgearth_mrt.vcxproj">
+      <Project>937D59F7-2032-4899-9873-755F5C7593F2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_occlusionculling/application_osgearth_occlusionculling.vcxproj">
+      <Project>F3C7E1FE-2171-4B19-A632-B9B15647E6B5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_overlayviewer/application_osgearth_overlayviewer.vcxproj">
+      <Project>9FB3849E-8F22-4875-BBDB-413734B54830</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_package/application_osgearth_package.vcxproj">
+      <Project>E857587F-0BC7-4FAB-B09B-CA5C8C2EAABE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_pick/application_osgearth_pick.vcxproj">
+      <Project>57B804F1-DE15-44AF-8F3B-F30382871035</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_sequencecontrol/application_osgearth_sequencecontrol.vcxproj">
+      <Project>7278A8BD-167F-4FCD-BFC4-E3A89D82B090</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_shadercomp/application_osgearth_shadercomp.vcxproj">
+      <Project>D55C7AE2-AB0B-4580-B8F2-C8C6F64B086C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_shadergen/application_osgearth_shadergen.vcxproj">
+      <Project>995F910B-2988-47E7-9703-6B6DC51CFB49</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_sharedlayer/application_osgearth_sharedlayer.vcxproj">
+      <Project>9D1FFC3E-7DEB-4866-81C4-A30824EE6A86</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_terrainprofile/application_osgearth_terrainprofile.vcxproj">
+      <Project>8F9C128A-BD90-493F-85C6-92BBDF7E755F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_tfs/application_osgearth_tfs.vcxproj">
+      <Project>D6C9233B-E37B-4D16-BCA2-5065C6B5D405</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_tileindex/application_osgearth_tileindex.vcxproj">
+      <Project>25654A2C-6A51-4645-A432-B89AE60E87BD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_tilesource/application_osgearth_tilesource.vcxproj">
+      <Project>F1C25655-8803-4D1F-A7AF-0C929FEE13FC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_toc/application_osgearth_toc.vcxproj">
+      <Project>31D30869-7F0F-4B36-9BA5-40F55ACE327F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_tracks/application_osgearth_tracks.vcxproj">
+      <Project>7634A9F0-4B51-4E1C-9EE4-630D15EB5006</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_transform/application_osgearth_transform.vcxproj">
+      <Project>73F54A5A-34F5-4117-95AC-96E92A4AE02F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_version/application_osgearth_version.vcxproj">
+      <Project>D52CAFE9-A0A5-4D99-84F1-1D14C033FF2C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/applications/osgearth_viewer/application_osgearth_viewer.vcxproj">
+      <Project>A88B8FBF-8C6E-4988-B805-E0D65E079B33</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarth/osgEarth.vcxproj">
+      <Project>2BFFEFC3-6356-44CA-A035-FDB3B943B139</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthAnnotation/osgEarthAnnotation.vcxproj">
+      <Project>F9842558-95AA-4F3E-9C47-C46114BBD35D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthFeatures/osgEarthFeatures.vcxproj">
+      <Project>6ABA1F74-F8A1-46D0-A1DA-F9B96F26F544</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthSymbology/osgEarthSymbology.vcxproj">
+      <Project>317835DC-05D5-4406-B128-071E22CD8E3F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthUtil/osgEarthUtil.vcxproj">
+      <Project>99D0FF43-4DD1-457F-92D0-6FB8EBFE34D1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/earth/osgdb_earth.vcxproj">
+      <Project>6F19B6C3-884D-4A91-BF96-D8A626B29867</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/kml/osgdb_kml.vcxproj">
+      <Project>5E2CE19A-956F-4187-AB38-F5EE2A340E4F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/agglite/osgdb_osgearth_agglite.vcxproj">
+      <Project>26B914A3-03F3-48B9-83F4-2A9168005FD5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/arcgis/osgdb_osgearth_arcgis.vcxproj">
+      <Project>0DE72E4D-2C2E-4F68-A0F2-7B008060A2B9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/arcgis_map_cache/osgdb_osgearth_arcgis_map_cache.vcxproj">
+      <Project>61FC68F1-C84B-41F6-813F-FCE7423A070A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthExtensions/billboard/osgdb_osgearth_billboard.vcxproj">
+      <Project>BE6CE499-0E2C-4340-9FF1-C7187A26054C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/bing/osgdb_osgearth_bing.vcxproj">
+      <Project>B0FE9B18-A079-4EFD-9DFD-F5EC99F7774A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthExtensions/bumpmap/osgdb_osgearth_bumpmap.vcxproj">
+      <Project>4854E562-FAB1-468B-8B33-B73628B27E18</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/cache_filesystem/osgdb_osgearth_cache_filesystem.vcxproj">
+      <Project>F36E7330-9BB1-4021-A116-E7AD5BEA23E4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/colorramp/osgdb_osgearth_colorramp.vcxproj">
+      <Project>E9BFC866-6228-47DB-AB89-45B5D4738AFD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/debug/osgdb_osgearth_debug.vcxproj">
+      <Project>A6FE2ADC-26D8-42A4-B904-5140480FC6A9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/engine_byo/osgdb_osgearth_engine_byo.vcxproj">
+      <Project>2BA993BD-152F-4247-B688-E18E038BED7C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/engine_mp/osgdb_osgearth_engine_mp.vcxproj">
+      <Project>C1F7A638-6114-451A-B46E-C8EB9AAF9E5A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/feature_elevation/osgdb_osgearth_feature_elevation.vcxproj">
+      <Project>EC3B4D9F-FE30-429C-B5D7-648A109AD66C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/feature_ogr/osgdb_osgearth_feature_ogr.vcxproj">
+      <Project>D6E76E25-B972-452A-BB1F-BA2CE6C65846</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/feature_raster/osgdb_osgearth_feature_raster.vcxproj">
+      <Project>09681324-3102-4CD5-B8B0-680197D22801</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/feature_tfs/osgdb_osgearth_feature_tfs.vcxproj">
+      <Project>F46F2C60-9041-499B-A24D-2EEBA46CECCE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/feature_wfs/osgdb_osgearth_feature_wfs.vcxproj">
+      <Project>61780A97-53EF-4B11-BF97-5031B77CF287</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/gdal/osgdb_osgearth_gdal.vcxproj">
+      <Project>71732232-29E1-42CE-BA65-84B7A15F38BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/label_annotation/osgdb_osgearth_label_annotation.vcxproj">
+      <Project>899A0977-0289-415C-9CCE-650B9115311D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthExtensions/mapinspector/osgdb_osgearth_mapinspector.vcxproj">
+      <Project>6001673C-3296-4334-B090-502DF60A7391</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/mask_feature/osgdb_osgearth_mask_feature.vcxproj">
+      <Project>62DCE4CE-373F-490B-A2B0-B2F9860845E3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/mbtiles/osgdb_osgearth_mbtiles.vcxproj">
+      <Project>3B5F89D7-3F2B-469F-86BB-C0681700E9B2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/model_feature_geom/osgdb_osgearth_model_feature_geom.vcxproj">
+      <Project>CE7B109E-AA7B-4C39-8FB3-F103F3CCAEAD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/model_feature_stencil/osgdb_osgearth_model_feature_stencil.vcxproj">
+      <Project>AF5937C2-4811-434A-8778-BE80DC3DB06C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/model_simple/osgdb_osgearth_model_simple.vcxproj">
+      <Project>DBB72A23-71F2-4AD0-AB01-9EDADE40BB75</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthExtensions/noise/osgdb_osgearth_noise.vcxproj">
+      <Project>AD72A752-D104-4711-A55E-4DA741A88EB9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthExtensions/normalmap/osgdb_osgearth_normalmap.vcxproj">
+      <Project>7F27622C-A086-4863-9E88-B2FE37C0D791</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/ocean_simple/osgdb_osgearth_ocean_simple.vcxproj">
+      <Project>70097CE4-7D2C-4C8A-A68C-658EDA9EF069</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/osg/osgdb_osgearth_osg.vcxproj">
+      <Project>C568E754-B095-4F77-A1EA-DDC58312C8F0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/quadkey/osgdb_osgearth_quadkey.vcxproj">
+      <Project>F32A9266-AC4C-4B3C-B352-E820E5C3137F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/refresh/osgdb_osgearth_refresh.vcxproj">
+      <Project>B69CA2EB-954A-4789-B775-7426F8A428EF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/script_engine_duktape/osgdb_osgearth_scriptengine_javascript.vcxproj">
+      <Project>DA374479-2C85-493A-887C-0F33A2DEE7F4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/sky_gl/osgdb_osgearth_sky_gl.vcxproj">
+      <Project>FE2FAC50-4232-4539-B5B3-A113A2CF1BFE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/sky_simple/osgdb_osgearth_sky_simple.vcxproj">
+      <Project>919A7E72-D107-433B-B361-51F20505C142</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthExtensions/splat/osgdb_osgearth_splat.vcxproj">
+      <Project>D29CB352-9F22-478B-B73A-AB2024AA04B8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/splat_mask/osgdb_osgearth_splat_mask.vcxproj">
+      <Project>5CDBDFB1-F01E-40B8-90FD-5748788A6A35</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/template_matclass/osgdb_osgearth_template_matclass.vcxproj">
+      <Project>44F4911F-24CC-4599-9D40-E8A2EA033C66</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthExtensions/terrainshader/osgdb_osgearth_terrainshader.vcxproj">
+      <Project>0B8E527D-C5CE-41D8-8705-4BEED9618DF8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/tilecache/osgdb_osgearth_tilecache.vcxproj">
+      <Project>A75E4AD5-F2D6-4AA9-B425-FFF50B8B412C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/tileindex/osgdb_osgearth_tileindex.vcxproj">
+      <Project>790E5FAF-BED5-4BE4-BF48-3AF1206F53EE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/tileservice/osgdb_osgearth_tileservice.vcxproj">
+      <Project>6938FD40-D670-4792-9FAB-F00E5D5B865E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/tms/osgdb_osgearth_tms.vcxproj">
+      <Project>26EFE06C-4EAD-41DF-BA5F-EE6D75BC6A31</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/vdatum_egm2008/osgdb_osgearth_vdatum_egm2008.vcxproj">
+      <Project>762BAE6D-ACFE-47B4-B795-D7B4751C8579</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/vdatum_egm84/osgdb_osgearth_vdatum_egm84.vcxproj">
+      <Project>7C1AFFF9-CD16-4C91-B55B-630BA7CCE9C8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/vdatum_egm96/osgdb_osgearth_vdatum_egm96.vcxproj">
+      <Project>34F0DA16-22D3-4CE1-B8C0-1168441BE781</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthExtensions/viewpoints/osgdb_osgearth_viewpoints.vcxproj">
+      <Project>BCEC9893-7B3B-4F6E-858C-941FCC0730FF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/vpb/osgdb_osgearth_vpb.vcxproj">
+      <Project>6AEA5E4D-64FA-44BD-A177-E9E441EF48D7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/wcs/osgdb_osgearth_wcs.vcxproj">
+      <Project>0CA7A0B7-B2F5-4F80-B7CE-7C9D705E03F7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/wms/osgdb_osgearth_wms.vcxproj">
+      <Project>D9F1300D-8D73-4FFF-B3EA-C87B733AABE1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/xyz/osgdb_osgearth_xyz.vcxproj">
+      <Project>14C2D9FA-221F-4891-AECA-0CA4459229DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Development/op3d_active/osgearth-2.7/msvc/src/osgEarthDrivers/yahoo/osgdb_osgearth_yahoo.vcxproj">
+      <Project>CF156E50-8EFC-40CE-9D40-4A50318293DF</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

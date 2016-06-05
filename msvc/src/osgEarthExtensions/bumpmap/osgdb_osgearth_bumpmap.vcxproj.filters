@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMapPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMapExtension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMapTerrainEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGenShaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMapShaders.cpp.in">
+      <Filter>Template Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\73ba3651aa2275be92b6dbfe12ba7972\AutoGenShaders.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMapExtension">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMapOptions">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMapTerrainEffect">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMapShaders">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMap.vert.model.glsl">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMap.vert.view.glsl">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMap.frag.simple.glsl">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMap.frag.progressive.glsl">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\bumpmap\BumpMap.frag.common.glsl">
+      <Filter>Shader Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CF0D3687-B702-4B23-8073-F78C0F4942B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9577DF2B-752F-4E32-A763-02007023CFB3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AA766389-AEAC-4B32-847C-5DDDB735706A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader Files">
+      <UniqueIdentifier>{5F64A0B7-70D4-4345-9165-ACE29E6CD7DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Template Files">
+      <UniqueIdentifier>{2FD69DE2-9A08-4BE0-9A06-23A1AB931483}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

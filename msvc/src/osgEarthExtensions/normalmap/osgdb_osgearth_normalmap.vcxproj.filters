@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\osgEarthExtensions\normalmap\NormalMapPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\osgEarthExtensions\normalmap\NormalMapExtension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\osgEarthExtensions\normalmap\NormalMapTerrainEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoGenShaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\osgEarthExtensions\normalmap\NormalMapShaders.cpp.in">
+      <Filter>Template Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\d830d1d2363a4c68a03cc26e67506d34\AutoGenShaders.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\osgEarthExtensions\normalmap\NormalMapExtension">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\normalmap\NormalMapOptions">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\normalmap\NormalMapTerrainEffect">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\normalmap\NormalMapShaders">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\normalmap\NormalMap.vert.glsl">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="..\..\..\..\src\osgEarthExtensions\normalmap\NormalMap.frag.glsl">
+      <Filter>Shader Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CF0D3687-B702-4B23-8073-F78C0F4942B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9577DF2B-752F-4E32-A763-02007023CFB3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AA766389-AEAC-4B32-847C-5DDDB735706A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader Files">
+      <UniqueIdentifier>{5F64A0B7-70D4-4345-9165-ACE29E6CD7DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Template Files">
+      <UniqueIdentifier>{2FD69DE2-9A08-4BE0-9A06-23A1AB931483}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
