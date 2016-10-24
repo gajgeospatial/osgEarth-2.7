@@ -25,18 +25,21 @@
 #include <osgEarth/URI>
 #include <osgEarth/TileSource>
 #include <osgEarth/ImageToHeightFieldConverter>
+
+#ifdef _WIN32
 #include <Windows.h>
+#endif
 
 #include "CDBTileSource"
 #include "CDBOptions"
-#include "CDB_Tile"
+#include <CDB_TileLib/CDB_Tile>
 
 
 using namespace osgEarth;
 
 
 CDBTileSource::CDBTileSource( const osgEarth::TileSourceOptions& options ) : TileSource(options), _options(options), _UseCache(false), _rootDir(""), _cacheDir(""), 
-																			_tileSize(1024)
+																			_tileSize(1024), _dataSet("_S001_T001_")
 {
 
 }   
@@ -71,6 +74,13 @@ osgEarth::TileSource::Status CDBTileSource::initialize(const osgDB::Options* dbO
    if (!CDB_Tile::Initialize_Tile_Drivers(Errormsg))
    {
 	   errorset = true;
+   }
+
+   if (_options.DisableBathemetry().isSet())
+   {
+	   bool disable = _options.DisableBathemetry().value();
+	   if (disable)
+		   CDB_Tile::Disable_Bathyemtry(true);
    }
 
    //Get the chache directory if it is set and turn on the cacheing option if it is present
@@ -118,7 +128,22 @@ osgEarth::TileSource::Status CDBTileSource::initialize(const osgDB::Options* dbO
 		   min_lat = round(min_lat);
 		   max_lat = round(max_lat);
 		   max_lon = round(max_lon);
-
+		   //Make sure the profile includes hole tiles above and below 50 deg
+		   int lonstep = CDB_Tile::Get_Lon_Step(min_lat);
+		   lonstep = CDB_Tile::Get_Lon_Step(max_lat) > lonstep ? CDB_Tile::Get_Lon_Step(max_lat) : lonstep;
+		   if (lonstep > 1)
+		   {
+			   int delta = (int)min_lon % lonstep;
+			   if (delta)
+			   {
+				   min_lon = (double)(((int)min_lon - lonstep) * lonstep);
+			   }
+			   delta = (int)max_lon % lonstep;
+			   if (delta)
+			   {
+				   max_lon = (double)(((int)max_lon + lonstep) * lonstep);
+			   }
+		   }
 		   //Expand the limits if necessary to meet the criteria for the number of negitive lods specified
 		   int subfact = 2 << Number_of_Negitive_LODs_to_Use;  //2 starts with lod 0 this means howerver a minumum of 4 geocells will be requested even if only one
 		   if ((max_lon > min_lon) && (max_lat > min_lat))	   //is specified in the limits section of the earth file.
@@ -175,21 +200,30 @@ osgEarth::TileSource::Status CDBTileSource::initialize(const osgDB::Options* dbO
 			   //Look for the Default Cache Dir
 			   std::stringstream buf;
 			   buf << _rootDir
-				   << "\\osgEarth"
-				   << "\\CDB_Cache";
+				   << "/osgEarth"
+				   << "/CDB_Cache";
 			   _cacheDir = buf.str();
+#ifdef _WIN32
 			   DWORD ftyp = ::GetFileAttributes(_cacheDir.c_str());
 			   if (ftyp != INVALID_FILE_ATTRIBUTES)
 			   {
 				   _UseCache = true;
 			   }
+#else
+			   int ftyp = ::access(_cacheDir.c_str(), F_OK);
+			   if (ftyp == 0)
+			   {
+				   _UseCache = true;
+			   }
+
+#endif
 		   }
 	   }
    }
 
    if (errorset)
    {
-	   TileSource::Status Rstatus(Errormsg);
+	   osgEarth::TileSource::Status Rstatus(Errormsg);
 	   return Rstatus;
    }
    else
@@ -206,8 +240,7 @@ osg::Image* CDBTileSource::createImage(const osgEarth::TileKey& key,
 	const GeoExtent key_extent = key.getExtent();
 	CDB_Tile_Type tiletype = Imagery;
 	CDB_Tile_Extent tileExtent(key_extent.north(), key_extent.south(), key_extent.east(), key_extent.west());
-
-	CDB_Tile *mainTile = new CDB_Tile(_rootDir, _cacheDir, tiletype, &tileExtent);
+	CDB_Tile *mainTile = new CDB_Tile(_rootDir, _cacheDir, tiletype, _dataSet, &tileExtent);
 	std::string base = mainTile->FileName();
 	int cdbLod = mainTile->CDB_LOD_Num();
 	if (cdbLod >= 0)
@@ -267,8 +300,7 @@ osg::HeightField* CDBTileSource::createHeightField(const osgEarth::TileKey& key,
 	const GeoExtent key_extent = key.getExtent();
 	CDB_Tile_Type tiletype = Elevation;
 	CDB_Tile_Extent tileExtent(key_extent.north(), key_extent.south(), key_extent.east(), key_extent.west());
-
-	CDB_Tile *mainTile = new CDB_Tile(_rootDir, _cacheDir, tiletype, &tileExtent);
+	CDB_Tile *mainTile = new CDB_Tile(_rootDir, _cacheDir, tiletype, _dataSet, &tileExtent);
 	std::string base = mainTile->FileName();
 	int cdbLod = mainTile->CDB_LOD_Num();
 

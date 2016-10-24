@@ -44,6 +44,8 @@ namespace osgEarth { namespace Drivers
 		const optional<int>& MaxCDBLevel() const { return _MaxCDBLevel; }
 		optional<int>& NumNegLODs() { return _NumNegLODs; }
 		const optional<int>& NumNegLODs() const { return _NumNegLODs; }
+		optional<bool>& DisableBathemetry() { return _Disable_Bathyemtry; }
+		const optional<bool>& DisableBathemetry() const { return _Disable_Bathyemtry; }
 
     public:
         CDBOptions( const TileSourceOptions& opt = TileSourceOptions() )
@@ -65,6 +67,7 @@ namespace osgEarth { namespace Drivers
 			conf.updateIfSet("limits", _Limits);
 			conf.updateIfSet("maxcdblevel", _MaxCDBLevel);
 			conf.updateIfSet("num_neg_lods", _NumNegLODs);
+			conf.updateIfSet("disablebathyemetry", _Disable_Bathyemtry);
 			return conf;
         }
 
@@ -83,6 +86,7 @@ namespace osgEarth { namespace Drivers
 			conf.getIfSet("limits", _Limits);
 			conf.getIfSet("maxcdblevel", _MaxCDBLevel);
 			conf.getIfSet("num_neg_lods", _NumNegLODs);
+			conf.getIfSet("disablebathyemetry", _Disable_Bathyemtry);
 		}
 
         optional<std::string> _rootDir;
@@ -90,6 +94,7 @@ namespace osgEarth { namespace Drivers
 		optional<std::string> _cacheDir;
 		optional<int> _MaxCDBLevel;
 		optional<int> _NumNegLODs;
+		optional<bool> _Disable_Bathyemtry;
     };
 
 } } // namespace osgEarth::Drivers

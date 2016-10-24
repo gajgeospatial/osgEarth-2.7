@@ -353,7 +353,7 @@ int
     else
     {                
         // Seed all the map layers
-        for (unsigned int i = 0; i < map->getNumImageLayers(); ++i)
+        for (int i = 0; i < map->getNumImageLayers(); ++i)
         {            
             osg::ref_ptr< ImageLayer > layer = map->getImageLayerAt(i);
             OE_NOTICE << "Seeding layer" << layer->getName() << std::endl;            
@@ -366,7 +366,7 @@ int
             }                
         }
 
-        for (unsigned int i = 0; i < map->getNumElevationLayers(); ++i)
+        for (int i = 0; i < map->getNumElevationLayers(); ++i)
         {
             osg::ref_ptr< ElevationLayer > layer = map->getElevationLayerAt(i);
             OE_NOTICE << "Seeding layer" << layer->getName() << std::endl;

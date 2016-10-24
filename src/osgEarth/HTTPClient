@@ -382,7 +382,7 @@ namespace osgEarth
         bool doDownload(const std::string& url, const std::string& filename);
 
     private:
-        void*       _curl_handle;
+        void *       _curl_handle;
         std::string _previousPassword;
         long        _previousHttpAuthentication;
         bool        _initialized;

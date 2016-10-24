@@ -162,6 +162,7 @@ SubstituteModelFilter::process(const FeatureList&           features,
 
 	osg::ref_ptr<osgDB::Archive> ar = NULL;
 
+	bool Do_Editing_Support = false;
     for( FeatureList::const_iterator f = features.begin(); f != features.end(); ++f )
     {
         Feature* input = f->get();
@@ -243,7 +244,23 @@ SubstituteModelFilter::process(const FeatureList&           features,
         // evalute the scale expression (if there is one)
         float scale = 1.0f;
         osg::Matrixd scaleMatrix;
-		if (!feature_defined_model)
+		if (feature_defined_model)
+		{
+			//add check for attribute scale
+			float scaleX = 1.0; 
+			float scaleY = 1.0;
+			float scaleZ = 1.0;
+			if (input->hasAttr("scalx"))
+				scaleX = (float)input->getDouble("scalx");
+			if (input->hasAttr("scaly"))
+				scaleY = (float)input->getDouble("scaly");
+			if (input->hasAttr("scalz"))
+				scaleZ = (float)input->getDouble("scalz");
+			if ((scaleX != 1.0) || (scaleY != 1.0) || (scaleZ != 1.0))
+				_normalScalingRequired = true;
+			scaleMatrix = osg::Matrix::scale(scaleX, scaleY, scaleZ);
+		}
+		else 
 		{
 			if (symbol->scale().isSet())
 			{
@@ -349,7 +366,8 @@ SubstituteModelFilter::process(const FeatureList&           features,
                         // but if the tile is big enough the up vectors won't be quite right.
                         osg::Matrixd rotation;
                         ECEF::transformAndGetRotationMatrix( point, context.profile()->getSRS(), point, targetSRS, rotation );
-                        mat = rotationMatrix * rotation * scaleMatrix * osg::Matrixd::translate( point ) * _world2local;
+						osg::Matrixd translation = osg::Matrixd::translate(point);
+                        mat = rotationMatrix * rotation * scaleMatrix * translation * _world2local;
                     }
                     else
                     {
@@ -369,7 +387,16 @@ SubstituteModelFilter::process(const FeatureList&           features,
                     }
 
                     // name the feature if necessary
-                    if ( !_featureNameExpr.empty() )
+					if (feature_defined_model)
+					{
+						if (input->hasAttr("transformname"))
+						{
+							Do_Editing_Support = true;
+							std::string transname = input->getString("transformname");
+							xform->setName(transname);
+						}
+					}
+					else if ( !_featureNameExpr.empty() )
                     {
                         const std::string& name = input->eval( _featureNameExpr, &context);
                         if ( !name.empty() )
@@ -379,6 +406,17 @@ SubstituteModelFilter::process(const FeatureList&           features,
             }
         }
     }
+
+	if (Do_Editing_Support)
+	{
+		osg::Group * Orphaned = new osg::Group();
+		Orphaned->setName("orphaneddmat");
+		osg::MatrixTransform* world2local = new osg::MatrixTransform();
+		world2local->setName("world2local");
+		world2local->setMatrix(_world2local);
+		Orphaned->addChild(world2local);
+		attachPoint->addChild(Orphaned);
+	}
 
     if ( iconSymbol )
     {

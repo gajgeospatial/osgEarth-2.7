@@ -153,6 +153,7 @@ namespace osgEarth { namespace Features
          * The unique ID of this feature (unique relative to its provider)
          */
         FeatureID getFID() const;
+		void setFID(FeatureID FID);
 
         /**
          * The geometry in this feature.

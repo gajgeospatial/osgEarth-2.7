@@ -59,7 +59,7 @@ using namespace osgEarth::Symbology;
 #define FIELD_NUMBER   "number"
 
 // icon to use, and size in pixels
-#define ICON_URL       "../data/m2525_air.png"
+#define ICON_URL       "D:/Development/op3d_active/osgEarth-2.7/data/m2525_air.png"
 #define ICON_SIZE      40
 
 // format coordinates as MGRS

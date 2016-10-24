@@ -193,7 +193,7 @@ main(int argc, char** argv)
     // A series of place nodes (an icon with a text label)
     {
         Style pin;
-        pin.getOrCreate<IconSymbol>()->url()->setLiteral( "../data/placemark32.png" );
+        pin.getOrCreate<IconSymbol>()->url()->setLiteral( "D:/Development/op3d_active/osgearth-2.7/data/placemark32.png" );
 
         // bunch of pins:
         labelGroup->addChild( new PlaceNode(mapNode, GeoPoint(geoSRS, -74.00, 40.71), "New York"      , pin));
@@ -404,7 +404,7 @@ main(int argc, char** argv)
     // an image overlay.
     {
         ImageOverlay* imageOverlay = 0L;
-        osg::Image* image = osgDB::readImageFile( "../data/USFLAG.TGA" );
+        osg::Image* image = osgDB::readImageFile( "D:/Development/op3d_active/osgEarth-2.7/data/USFLAG.TGA" );
         if ( image )
         {
             imageOverlay = new ImageOverlay(mapNode, image);

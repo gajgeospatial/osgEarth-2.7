@@ -153,7 +153,7 @@ namespace osgEarth
     getCurlFileTime(void* curl)
     {
         long filetime;
-        if (CURLE_OK != curl_easy_getinfo(curl, CURLINFO_FILETIME, &filetime))
+        if (CURLE_OK != curl_easy_getinfo((CURL *)curl, CURLINFO_FILETIME, &filetime))
             return TimeStamp(0);
         else if (filetime < 0)
             return TimeStamp(0);
@@ -427,14 +427,14 @@ HTTPClient::initializeImpl()
 
     OE_DEBUG << LC << "HTTPClient setting userAgent=" << userAgent << std::endl;
 
-    curl_easy_setopt( _curl_handle, CURLOPT_USERAGENT, userAgent.c_str() );
-    curl_easy_setopt( _curl_handle, CURLOPT_WRITEFUNCTION, osgEarth::StreamObjectReadCallback );
-    curl_easy_setopt( _curl_handle, CURLOPT_HEADERFUNCTION, osgEarth::StreamObjectHeaderCallback );
-    curl_easy_setopt( _curl_handle, CURLOPT_FOLLOWLOCATION, (void*)1 );
-    curl_easy_setopt( _curl_handle, CURLOPT_MAXREDIRS, (void*)5 );
-    curl_easy_setopt( _curl_handle, CURLOPT_PROGRESSFUNCTION, &CurlProgressCallback);
-    curl_easy_setopt( _curl_handle, CURLOPT_NOPROGRESS, (void*)0 ); //0=enable.
-    curl_easy_setopt( _curl_handle, CURLOPT_FILETIME, true );
+    curl_easy_setopt((CURL *) _curl_handle, CURLOPT_USERAGENT, userAgent.c_str() );
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_WRITEFUNCTION, osgEarth::StreamObjectReadCallback );
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_HEADERFUNCTION, osgEarth::StreamObjectHeaderCallback );
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_FOLLOWLOCATION, (void*)1 );
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_MAXREDIRS, (void*)5 );
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_PROGRESSFUNCTION, &CurlProgressCallback);
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_NOPROGRESS, (void*)0 ); //0=enable.
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_FILETIME, true );
 
     osg::ref_ptr< CurlConfigHandler > curlConfigHandler = getCurlConfigHandler();
     if (curlConfigHandler.valid()) {
@@ -448,7 +448,7 @@ HTTPClient::initializeImpl()
         timeout = osgEarth::as<long>(std::string(timeoutEnv), 0);
     }
     OE_DEBUG << LC << "Setting timeout to " << timeout << std::endl;
-    curl_easy_setopt( _curl_handle, CURLOPT_TIMEOUT, timeout );
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_TIMEOUT, timeout );
     long connectTimeout = s_connectTimeout;
     const char* connectTimeoutEnv = getenv("OSGEARTH_HTTP_CONNECTTIMEOUT");
     if (connectTimeoutEnv)
@@ -456,14 +456,14 @@ HTTPClient::initializeImpl()
         connectTimeout = osgEarth::as<long>(std::string(connectTimeoutEnv), 0);
     }
     OE_DEBUG << LC << "Setting connect timeout to " << connectTimeout << std::endl;
-    curl_easy_setopt( _curl_handle, CURLOPT_CONNECTTIMEOUT, connectTimeout );
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_CONNECTTIMEOUT, connectTimeout );
 
     _initialized = true;
 }
 
 HTTPClient::~HTTPClient()
 {
-    if (_curl_handle) curl_easy_cleanup( _curl_handle );
+    if ((CURL *) _curl_handle) curl_easy_cleanup((CURL *)_curl_handle );
     _curl_handle = 0;
 }
 
@@ -779,7 +779,7 @@ HTTPClient::doGet(const HTTPRequest&    request,
         }
 
         //curl_easy_setopt( _curl_handle, CURLOPT_HTTPPROXYTUNNEL, 1 ); 
-        curl_easy_setopt( _curl_handle, CURLOPT_PROXY, proxy_addr.c_str() );
+        curl_easy_setopt((CURL *)_curl_handle, CURLOPT_PROXY, proxy_addr.c_str() );
 
         //Setup the proxy authentication if setup
         if (!proxy_auth.empty())
@@ -789,13 +789,13 @@ HTTPClient::doGet(const HTTPRequest&    request,
                 OE_NOTICE << LC << "Using proxy authentication " << proxy_auth << std::endl;
             }
 
-            curl_easy_setopt( _curl_handle, CURLOPT_PROXYUSERPWD, proxy_auth.c_str());
+            curl_easy_setopt((CURL *)_curl_handle, CURLOPT_PROXYUSERPWD, proxy_auth.c_str());
         }
     }
     else
     {
         OE_DEBUG << LC << "Removing proxy settings" << std::endl;
-        curl_easy_setopt( _curl_handle, CURLOPT_PROXY, 0 );
+        curl_easy_setopt((CURL *)_curl_handle, CURLOPT_PROXY, 0 );
     }
 
     std::string url = request.getURL();
@@ -816,7 +816,7 @@ HTTPClient::doGet(const HTTPRequest&    request,
     {
         const std::string colon(":");
         std::string password(details->username + colon + details->password);
-        curl_easy_setopt(_curl_handle, CURLOPT_USERPWD, password.c_str());
+        curl_easy_setopt((CURL *)_curl_handle, CURLOPT_USERPWD, password.c_str());
         const_cast<HTTPClient*>(this)->_previousPassword = password;
 
         // use for https.
@@ -825,7 +825,7 @@ HTTPClient::doGet(const HTTPRequest&    request,
 #if LIBCURL_VERSION_NUM >= 0x070a07
         if (details->httpAuthentication != _previousHttpAuthentication)
         { 
-            curl_easy_setopt(_curl_handle, CURLOPT_HTTPAUTH, details->httpAuthentication); 
+            curl_easy_setopt((CURL *)_curl_handle, CURLOPT_HTTPAUTH, details->httpAuthentication);
             const_cast<HTTPClient*>(this)->_previousHttpAuthentication = details->httpAuthentication;
         }
 #endif
@@ -834,7 +834,7 @@ HTTPClient::doGet(const HTTPRequest&    request,
     {
         if (!_previousPassword.empty())
         {
-            curl_easy_setopt(_curl_handle, CURLOPT_USERPWD, 0);
+            curl_easy_setopt((CURL *)_curl_handle, CURLOPT_USERPWD, 0);
             const_cast<HTTPClient*>(this)->_previousPassword.clear();
         }
 
@@ -842,7 +842,7 @@ HTTPClient::doGet(const HTTPRequest&    request,
         // need to reset if previously set.
         if (_previousHttpAuthentication!=0)
         {
-            curl_easy_setopt(_curl_handle, CURLOPT_HTTPAUTH, 0); 
+            curl_easy_setopt((CURL *)_curl_handle, CURLOPT_HTTPAUTH, 0);
             const_cast<HTTPClient*>(this)->_previousHttpAuthentication = 0;
         }
 #endif
@@ -863,17 +863,17 @@ HTTPClient::doGet(const HTTPRequest&    request,
 
     // Disable the default Pragma: no-cache that curl adds by default.
     headers = curl_slist_append(headers, "Pragma: ");
-    curl_easy_setopt(_curl_handle, CURLOPT_HTTPHEADER, headers);
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_HTTPHEADER, headers);
     
     osg::ref_ptr<HTTPResponse::Part> part = new HTTPResponse::Part();
     StreamObject sp( &part->_stream );
 
     //Take a temporary ref to the callback (why? dangerous.)
     //osg::ref_ptr<ProgressCallback> progressCallback = callback;
-    curl_easy_setopt( _curl_handle, CURLOPT_URL, url.c_str() );
+    curl_easy_setopt((CURL *)_curl_handle, CURLOPT_URL, url.c_str() );
     if (progress)
     {
-        curl_easy_setopt(_curl_handle, CURLOPT_PROGRESSDATA, progress);
+        curl_easy_setopt((CURL *)_curl_handle, CURLOPT_PROGRESSDATA, progress);
     }
 
     CURLcode res;
@@ -885,26 +885,26 @@ HTTPClient::doGet(const HTTPRequest&    request,
     {
         char errorBuf[CURL_ERROR_SIZE];
         errorBuf[0] = 0;
-        curl_easy_setopt( _curl_handle, CURLOPT_ERRORBUFFER, (void*)errorBuf );
-        curl_easy_setopt( _curl_handle, CURLOPT_WRITEDATA, (void*)&sp);
-        curl_easy_setopt( _curl_handle, CURLOPT_HEADERDATA, (void*)&sp);
+        curl_easy_setopt((CURL *)_curl_handle, CURLOPT_ERRORBUFFER, (void*)errorBuf );
+        curl_easy_setopt((CURL *)_curl_handle, CURLOPT_WRITEDATA, (void*)&sp);
+        curl_easy_setopt((CURL *)_curl_handle, CURLOPT_HEADERDATA, (void*)&sp);
 
         //Disable peer certificate verification to allow us to access in https servers where the peer certificate cannot be verified.
-        curl_easy_setopt( _curl_handle, CURLOPT_SSL_VERIFYPEER, (void*)0 );
+        curl_easy_setopt((CURL *)_curl_handle, CURLOPT_SSL_VERIFYPEER, (void*)0 );
         
         osg::ref_ptr< CurlConfigHandler > curlConfigHandler = getCurlConfigHandler();
         if (curlConfigHandler.valid()) {
             curlConfigHandler->onGet(_curl_handle);
         }
 
-        res = curl_easy_perform(_curl_handle);
-        curl_easy_setopt( _curl_handle, CURLOPT_WRITEDATA, (void*)0 );
-        curl_easy_setopt( _curl_handle, CURLOPT_PROGRESSDATA, (void*)0);
+        res = curl_easy_perform((CURL *)_curl_handle);
+        curl_easy_setopt((CURL *)_curl_handle, CURLOPT_WRITEDATA, (void*)0 );
+        curl_easy_setopt((CURL *)_curl_handle, CURLOPT_PROGRESSDATA, (void*)0);
 
         if (!proxy_addr.empty())
         {
             long connect_code = 0L;
-            CURLcode r = curl_easy_getinfo(_curl_handle, CURLINFO_HTTP_CONNECTCODE, &connect_code);
+            CURLcode r = curl_easy_getinfo((CURL *)_curl_handle, CURLINFO_HTTP_CONNECTCODE, &connect_code);
             if ( r != CURLE_OK )
             {
                 OE_WARN << LC << "Proxy connect error: " << curl_easy_strerror(r) << std::endl;
@@ -912,7 +912,7 @@ HTTPClient::doGet(const HTTPRequest&    request,
             }
         }
 
-        curl_easy_getinfo( _curl_handle, CURLINFO_RESPONSE_CODE, &response_code );        
+        curl_easy_getinfo((CURL *)_curl_handle, CURLINFO_RESPONSE_CODE, &response_code );
     }
     else
     {
@@ -926,7 +926,7 @@ HTTPClient::doGet(const HTTPRequest&    request,
     // read the response content type:
     char* content_type_cp;
 
-    curl_easy_getinfo( _curl_handle, CURLINFO_CONTENT_TYPE, &content_type_cp );    
+    curl_easy_getinfo((CURL *)_curl_handle, CURLINFO_CONTENT_TYPE, &content_type_cp );
 
     if ( content_type_cp != NULL )
     {

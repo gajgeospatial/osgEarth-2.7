@@ -382,7 +382,7 @@ makeTMS( osg::ArgumentParser& args )
     else
     {        
         // Package all the ImageLayer's
-        for (unsigned int i = 0; i < map->getNumImageLayers(); i++)
+        for (int i = 0; i < map->getNumImageLayers(); i++)
         {            
             ImageLayer* layer = map->getImageLayerAt(i);        
             OE_NOTICE << "Packaging " << layer->getName() << std::endl;
@@ -419,7 +419,7 @@ makeTMS( osg::ArgumentParser& args )
         }    
 
         // Package all the ElevationLayer's
-        for (unsigned int i = 0; i < map->getNumElevationLayers(); i++)
+        for (int i = 0; i < map->getNumElevationLayers(); i++)
         {            
             ElevationLayer* layer = map->getElevationLayerAt(i);        
             OE_NOTICE << "Packaging " << layer->getName() << std::endl;

@@ -181,6 +181,11 @@ Feature::getFID() const
     return _fid;
 }
 
+void Feature::setFID(FeatureID FID)
+{
+	_fid = FID;
+}
+
 void
 Feature::setSRS( const SpatialReference* srs )
 {
